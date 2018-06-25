@@ -1,6 +1,14 @@
-# kuard
+# kuar
 
 >Kubernetes up & running
+
+### Proxy
+
+From cloud cluster to localhost:
+
+```
+kubectl proxy
+```
 
 ### Kubernetes Proxy
 
