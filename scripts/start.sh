@@ -2,7 +2,11 @@
 
 set -efux
 
-docker run -d --name kuard --publish 8080:8080 originalhat/kuard-amd64:1
+docker run -d --name kuard \
+  --publish 8080:8080 \
+  --memory 200m \
+  --memory-swap 1G \
+  originalhat/kuard-amd64:1
 
 sleep 1
 
