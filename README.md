@@ -76,3 +76,11 @@ kube exec -it kuard ash
 ```
 kubectl cp <pod-name>:/captures/capture3.txt ./capture3.txt
 ```
+
+## Labels
+
+Filtering:
+
+```
+kubectl get pods --selector="env=prod"
+```
