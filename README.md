@@ -68,7 +68,7 @@ kubectl exec kuard date
 ```
 
 ```
-kube exec -it kuard ash
+kubectl exec -it kuard ash
 ```
 
 ## Copying files
@@ -83,4 +83,16 @@ Filtering:
 
 ```
 kubectl get pods --selector="env=prod"
+```
+
+## Modifying a deployment
+
+```
+kubectl edit deployment/alpaca-prod
+```
+
+## Horizontal Pod Scaling [HPA]
+
+```
+kubectl autoscale rs kuard --min=2 --max=5 --cpu-percent=80
 ```
